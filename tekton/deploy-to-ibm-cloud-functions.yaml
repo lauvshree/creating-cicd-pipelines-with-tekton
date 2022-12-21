@@ -28,4 +28,4 @@ spec:
               key: apikey
       command: ["/bin/bash", "-c"]
       args:
-        - echo ${params.cf-deprecation-message}
+        - echo $(params.cf-deprecation-message)
