@@ -24,5 +24,5 @@ spec:
               name: secure-properties
               key: apikey
       command: "/bin/bash"
-        args:
-          ['-c', echo "Unable to deploy on CF. CF is deprecated. Try with Code Engine paid version"'];
+      args:
+          -['-c', echo "Unable to deploy on CF. CF is deprecated. Try with Code Engine paid version"'];
