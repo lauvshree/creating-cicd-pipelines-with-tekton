@@ -23,4 +23,6 @@ spec:
             secretKeyRef:
               name: secure-properties
               key: apikey
-      command: ["echo 'Deployment with CF deprecated. Try with paid version of Code Engine."]
+      command: "/bin/bash"
+        args:
+          ['-c', echo "Unable to deploy on CF. CF is deprecated. Try with Code Engine paid version"'];
