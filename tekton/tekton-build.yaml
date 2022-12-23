@@ -108,3 +108,11 @@ spec:
     workspaces:
       - name: source
         workspace: git-repo
+    - name: verify-deployment
+    taskRef:
+      name: verify-deployment
+    runAfter:
+      - deploy-artifact-to-ibm-cloud-functions
+    workspaces:
+      - name: output
+        workspace: git-repo
