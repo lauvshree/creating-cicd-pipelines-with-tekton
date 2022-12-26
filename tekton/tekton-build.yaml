@@ -108,7 +108,7 @@ spec:
     workspaces:
       - name: source
         workspace: git-repo
-    - name: verify-deployment
+  - name: verify-deployment
     taskRef:
       name: verify-deployment
     runAfter:
