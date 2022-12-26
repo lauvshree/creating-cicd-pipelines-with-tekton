@@ -7,8 +7,6 @@ spec:
     - name: verification-message
       description: Message verifying that the task was called. A placeholder for the deployment verification
       default: The deployment has been verified
-  workspaces:
-    - name: source
   steps:
     - name: deploy-app
       image: ibmcom/pipeline-base-image:2.7
