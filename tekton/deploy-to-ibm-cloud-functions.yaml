@@ -15,6 +15,8 @@ spec:
     - name: cf-deprecation-message
       description: CF deprecation message. And suggestion to use Code Engine
       default: CF is deprecated. Deployment through Cloud IDE using Code Engine can be attempted.
+  workspaces:
+    - name: source
   steps:
     - name: deploy-app
       image: icr.io/continuous-delivery/pipeline/pipeline-base-image:2.15
